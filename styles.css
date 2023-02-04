@@ -94,16 +94,3 @@ Main Navbar:
 		/* background: red; */
 	}
 }
-/* .main-navbar ul {
-	max-width: 1170px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-} */
-/* .main-navbar ul {
-	max-width: 1170px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: row !important;
-	justify-content: space-around;
-} */
