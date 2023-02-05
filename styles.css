@@ -91,7 +91,6 @@ Main Navbar:
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		/* background: red; */
 	}
 	.main-navbar a {
 		text-align: center;
@@ -107,9 +106,6 @@ Main Hero:
 	display: grid;
 	justify-content: center;
 	align-items: center;
-}
-.hero-banner {
-	/* padding: 0 1rem; */
 }
 .hero-banner p {
 	width: 80%;
