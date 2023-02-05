@@ -93,4 +93,7 @@ Main Navbar:
 		grid-template-columns: repeat(4, 1fr);
 		/* background: red; */
 	}
+	.main-navbar a {
+		text-align: center;
+	}
 }
