@@ -1,1 +1,1 @@
-# Grid-mini-projects
+# Grid mini projects
