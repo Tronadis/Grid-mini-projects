@@ -155,17 +155,41 @@ h1 {
 /* .card-footer span {
 	color: var(--primaryColor);
 } */
-@media screen and (min-width: 768px) {
+/* Responsive grid layout WITH media queries: */
+/* @media screen and (min-width: 768px) {
 	.cards-center {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 2rem;
-		/* obsolete synonym of*/
 		column-gap: 2rem;
 	}
 }
 @media screen and (min-width: 1170px) {
 	.cards-center {
 		grid-template-columns: repeat(3, 1fr);
+	}
+} */
+/* 
+Responsive grid layout WITHOUT media queries:
+example for	max 3 columns with
+	max-width: 1170px;
+	column-gap: 2rem; (1rem=16px)
+
+first calculate
+		1rem=16px
+	so 2rem=32px,
+	so 2 gaps=64px,
+	1170-64=1106 
+	1106/3=368.66...px
+(1170-((16x2)x2))/3 =368.66...px 
+(max-width-((gap)gaps))/columns= column's min-width.
+
+then set 
+grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+ */
+@media screen and (min-width: 1170px) {
+	.cards-center {
+		display: grid;
+		column-gap: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
 	}
 }
