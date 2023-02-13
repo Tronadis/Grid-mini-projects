@@ -330,3 +330,37 @@ main {
 		justify-items: center;
 	}
 }
+@media screen and (min-width: 992px) {
+	main {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas:
+			"a a a"
+			"b c d"
+			"e e e";
+	}
+	header {
+		grid-area: a;
+	}
+	.navbar {
+		grid-area: b;
+		padding: 2rem;
+	}
+	.navbar ul {
+		grid-template-columns: 1fr;
+		height: 100%;
+	}
+	.content {
+		grid-area: c;
+	}
+	aside {
+		grid-area: d;
+		grid-template-columns: 1fr;
+		padding: 1rem;
+		background: var(--darkGrey);
+	}
+	footer {
+		grid-area: e;
+	}
+}
