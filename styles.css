@@ -366,7 +366,7 @@ main {
 } */
 @media screen and (min-width: 992px) {
 	main {
-		grid-template-columns: [start] 200px [col-1-end] 1fr [col-2-end] 50px [end];
+		grid-template-columns: [start] auto [col-1-end] 1fr [col-2-end] 50px [end];
 		grid-template-rows: [start] auto [row-1-end] 1fr [row-2-end] auto [end];
 	}
 	header {
@@ -374,6 +374,7 @@ main {
 		grid-row: start / row-1-end;
 	}
 	.navbar {
+		padding: 2rem;
 		grid-column: start / col-1-end;
 		grid-row: row-1-end / row-2-end;
 	}
